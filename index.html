@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum</title>
+</head>
+<body>  
+    <div class="main"> <!--left-->
+        <div class="left-top">
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+            <h2 id="clock">00:00:00</h2>
+            <form class="hidden" id="login-form">
+                <input 
+                required 
+                maxlength="15" 
+                type="text" 
+                placeholder="Enter your name"/>
+                <button>LogIn</button>
+            </form> 
+            <h1 class="hidden" id="greeting"></h1>
+        </div>
+        
+        <img src="./assets/left_arrow_icon.svg" alt="left-arrow" class="arrow">
+        <div class="todoNav">
+            <h2 class="todoText">ToDo-List</h2>
+        </div>
+        
+        
+
+        <div class="left-bottom">
+            <div id="border"></div>
+            <div id="quote-card">
+                <div id="quote">
+                    <div id="author-img"></div>
+                    <div id="quote-content">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="side-menu"> <!--right-->
+        <img src="./assets/Grey_close_x.svg" alt="close-icon" class="close">
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press Enter">
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/sidebar.js"></script>
+</body>
+</html>
