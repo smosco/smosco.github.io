@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        serif: ["Lora", ...defaultTheme.fontFamily.serif],
+        sans: ["Pretendard", "Inter", ...defaultTheme.fontFamily.sans],
+        serif: ["Pretendard", "Lora", ...defaultTheme.fontFamily.serif],
       },
     },
   },

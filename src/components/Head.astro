@@ -1,9 +1,13 @@
 ---
 import "../styles/global.css";
+import "@fontsource/pretendard/400.css";
+import "@fontsource/pretendard/600.css";
 import "@fontsource/inter/latin-400.css";
 import "@fontsource/inter/latin-600.css";
 import "@fontsource/lora/400.css";
 import "@fontsource/lora/600.css";
+import pretendard400 from "@fontsource/pretendard/files/pretendard-latin-400-normal.woff2";
+import pretendard600 from "@fontsource/pretendard/files/pretendard-latin-600-normal.woff2";
 import inter400 from "@fontsource/inter/files/inter-latin-400-normal.woff2";
 import inter600 from "@fontsource/inter/files/inter-latin-600-normal.woff2";
 import lora400 from "@fontsource/lora/files/lora-latin-400-normal.woff2";
@@ -42,6 +46,20 @@ const { title, description, image = "/nano.png" } = Astro.props;
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
+<link
+  rel="preload"
+  href={pretendard400}
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href={pretendard600}
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
 <link rel="preload" href={inter400} as="font" type="font/woff2" crossorigin />
 <link rel="preload" href={inter600} as="font" type="font/woff2" crossorigin />
 <link rel="preload" href={lora400} as="font" type="font/woff2" crossorigin />
